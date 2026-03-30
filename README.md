@@ -1,73 +1,41 @@
-# amrit-core-dna
-
-A comprehensive learning and analysis platform for Amrit Core DNA systems and operations.
+# Amrit Core DNA Project
 
 ## Overview
-This repository contains core DNA learning modules, analysis tools, and experimental notebooks for understanding and implementing Amrit Core functionality. It provides a structured framework for learning layer implementation and data analysis.
+The Amrit Core DNA project is designed to streamline and enhance the DNA processing workflows. It provides robust tools and features to assist researchers and developers in working with DNA sequences and analyses.
 
 ## Features
-- Core DNA learning layer implementation
-- Jupyter notebooks for analysis and experimentation
-- Modular architecture for easy extension
-- Python 3.10+ compatibility
+- Comprehensive DNA sequence analysis tools
+- User-friendly interface
+- API for developers
+- Extensible architecture for added functionalities
 
-## Installation
+## Architecture
+The project follows a modular architecture allowing easy integration of new features and maintaining existing functionalities. Key components include:
+- **Data Processing Module**: Handles raw DNA data processing.
+- **Analysis Module**: Performs analytical tasks on processed data.
+- **API Module**: Exposes endpoints for developers.
 
-### Prerequisites
-- Python 3.10 or higher
-- pip or conda package manager
-
-### Setup
-```bash
-# Clone the repository
-git clone https://github.com/gurpreetsingh2009-cmyk/amrit-core-dna.git
-cd amrit-core-dna
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Project Structure
-```
-amrit-core-dna/
-├── amrit-core/              # Core modules and utilities
-│   └── learning_layer.py    # Main learning layer implementation
-├── notebooks/               # Jupyter notebooks for analysis and experiments
-├── .github/                 # GitHub configuration files
-├── requirements.txt         # Python dependencies
-├── README.md               # This file
-└── .gitignore             # Git ignore patterns
-```
-
-## Usage
-
-### Running the Learning Layer
+## Usage Examples
+### Basic DNA Sequence Analysis
 ```python
-from amrit_core.learning_layer import LearningLayer
+from amrit_core import DNAAnalyzer
 
-# Initialize and use the learning layer
-layer = LearningLayer()
-# Add your implementation here
+dna = DNAAnalyzer("ATCGATCG")
+results = dna.analyze()
+print(results)
 ```
 
-### Working with Notebooks
-Navigate to the `notebooks/` directory and open any `.ipynb` file with Jupyter:
-```bash
-jupyter notebook notebooks/
-```
+## API Endpoints
+- **GET /api/dna/analyze**: Analyzes DNA sequence input.
+- **POST /api/dna/upload**: Uploads raw DNA data for processing.
 
-## Dependencies
-See `requirements.txt` for the complete list of dependencies:
-- Python >= 3.10
-
-## Contributing
-Contributions are welcome! Please feel free to submit issues and pull requests.
+## Contribution Guidelines
+We welcome contributions from the community! Please ensure to follow these steps for contributing:
+1. Fork the repository
+2. Create a new branch for your feature or fix
+3. Make your changes and commit them
+4. Push your branch and submit a pull request
+5. Ensure to provide detailed information about your changes in the PR description.
 
 ## License
-This project is open source. See LICENSE for more details.
-
-## Author
-- **Gurpreet Singh** (@gurpreetsingh2009-cmyk)
-
-## Last Updated
-February 7, 2026
+This project is licensed under the MIT License.
